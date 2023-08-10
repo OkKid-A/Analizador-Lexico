@@ -1,0 +1,11 @@
+A.
+1) aabbcc
+	L = 
+
+
+1)	abcd{
+	S -> aSb
+	S -> X = aXb
+	X -> Y = aYb
+	Y -> e = ab
+}
