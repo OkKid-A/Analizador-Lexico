@@ -6,17 +6,18 @@ public enum Simbolo {
     GUION(1),
     DIGITO(2),
     ARITMETICO(3),
-    COMPARADOR(4),
-    EXCLAMACION(5),
-    IGUAL(6),
-    PUNTO(7),
-    CADENA(8),
-    COMILLASS(9),
-    COMILLASD(10),
-    BOOLEANO(11),
+    ASTERISCO(4),
+    DIAGONAL(5),
+    COMPARADOR(6),
+    EXCLAMACION(7),
+    IGUAL(8),
+    PUNTO(9),
+    COMILLASS(10),
+    COMILLASD(11),
     NUMERAL(12),
     SALTO(13),
-    OTROS(14);
+    OTROS(14),
+    ERROR(-1);
 
 
 
@@ -29,13 +30,43 @@ public enum Simbolo {
         this.tipoTransicion = tipoTransicion;
     }
 
-    public int getSimbolo(){
+    public int getNumeroSimbolo(){
         return this.tipoTransicion;
     }
 
-    public int clasificarSimbolo(char c){
-        switch (){
-
+    public Simbolo clasificarSimbolo(char c){
+        if(Character.isLetter(c)){
+            return LETRA;
+        } else if (c == '_'){
+            return GUION;
+        } else if (Character.isDigit(c)){
+            return DIGITO;
+        } else if (c == '+'|| c == '-'|| c == '%'){
+            return ARITMETICO;
+        } else if(c == '*'){
+            return ASTERISCO;
+        } else if (c == '/'){
+            return DIAGONAL;
+        } else if (c == '<' || c == '>'){
+            return COMPARADOR;
+        } else if (c == '!'){
+            return EXCLAMACION;
+        } else if (c == '='){
+            return IGUAL;
+        } else if (c == '.'){
+            return PUNTO;
+        } else if (c == '\''){
+            return COMILLASS;
+        } else if (c == '"'){
+            return COMILLASD;
+        } else if (c == '#'){
+            return NUMERAL;
+        } else if (c == '\n'){
+            return SALTO;
+        } else if (c == '('|| c == ')'|| c == '['|| c == ']'|| c == '{'|| c == '}'|| c == ','|| c == ';'|| c == ':'){
+            return OTROS;
+        } else {
+            return ERROR;
         }
     }
 

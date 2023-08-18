@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37fbbb6a-3509-4cc6-926c-620f87144888" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Automata/TablaDeSimbolos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Automata/Automata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Automata/Automata.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Estado/Estado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Estado/Estado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lector/LectorArchivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lector/LectorArchivo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Token/Simbolo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Token/Simbolo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Token/TablaDeSimbolos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Token/TipoToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Token/TipoToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Token/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Token/Token.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,25 +39,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "/home/okkid-a/Documents/Practicas/Analizador-Lexico",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "onboarding.tips.debug.path": "/home/okkid-a/Documents/Practicas/Analizador-Lexico/untitled/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/okkid-a/Documents/Practicas/Analizador-Lexico&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/home/okkid-a/Documents/Practicas/Analizador-Lexico/untitled/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -65,6 +72,8 @@
       <workItem from="1691804519794" duration="32000" />
       <workItem from="1691804551489" duration="16000" />
       <workItem from="1691804572643" duration="4967000" />
+      <workItem from="1691970470216" duration="8577000" />
+      <workItem from="1692317953607" duration="10397000" />
     </task>
     <servers />
   </component>

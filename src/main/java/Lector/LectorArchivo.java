@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.Reader;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.security.PublicKey;
 import java.util.ArrayList;
 
 public class LectorArchivo {
@@ -26,5 +27,10 @@ public class LectorArchivo {
             e.printStackTrace();
         }
         return leidaPartida;
+    }
+
+    public char[] separarCaracteres(String texto){
+        char[] caracteres = texto.toCharArray();
+        return caracteres;
     }
 }
