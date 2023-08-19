@@ -17,6 +17,7 @@ public enum Simbolo {
     NUMERAL(12),
     SALTO(13),
     OTROS(14),
+    SPACE(15),
     ERROR(-1);
 
 
@@ -65,7 +66,9 @@ public enum Simbolo {
             return SALTO;
         } else if (c == '('|| c == ')'|| c == '['|| c == ']'|| c == '{'|| c == '}'|| c == ','|| c == ';'|| c == ':'){
             return OTROS;
-        } else {
+        } else if (c == ' '){
+            return SPACE;
+        }else {
             return ERROR;
         }
     }

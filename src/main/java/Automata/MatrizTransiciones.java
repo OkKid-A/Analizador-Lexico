@@ -5,6 +5,7 @@ import main.java.Token.Simbolo;
 
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Objects;
 
 public class MatrizTransiciones {
 
@@ -24,7 +25,11 @@ public class MatrizTransiciones {
         this.matriz = new Transicion[transiciones.length][12];
         for (int i = 0; i < transiciones.length; i++){
             for (int k = 0; k < 12; k++){
+                if (transiciones[i][k] != 0){
                     matriz[i][k] = new Transicion(i,transiciones[i][k]);
+                } else {
+                    matriz[i][k] = new Transicion(i,-1);
+                }
             }
         }
     }

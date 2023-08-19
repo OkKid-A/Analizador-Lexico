@@ -12,4 +12,20 @@ public class Token {
     public Token(Dimension posicion, TipoToken tipoToken, String patron, String lexema){
 
     }
+
+    public String getLexema() {
+        return lexema;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public String getPatron() {
+        return patron;
+    }
+
+    public Dimension getPosicion() {
+        return posicion;
+    }
 }
