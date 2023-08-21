@@ -6,27 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="37fbbb6a-3509-4cc6-926c-620f87144888" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Automata/Automata.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Automata/Automata.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Automata/TablaDeSimbolos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Automata/TablaDeSimbolos.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Componentes/Componente$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Componentes/Componente$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Componentes/Componente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Componentes/Componente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Componentes/Tabla$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Componentes/Tabla$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Componentes/Tabla.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Componentes/Tabla.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Token/LexemaError.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Token/LexemaError.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Token/TipoToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Token/TipoToken.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Token/Token.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Token/Token.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/UI/VentanaPrincipal$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/UI/VentanaPrincipal$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/UI/VentanaPrincipal$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/UI/VentanaPrincipal$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/UI/VentanaPrincipal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/UI/VentanaPrincipal.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Automata/Automata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Automata/Automata.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Automata/TablaDeSimbolos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Automata/TablaDeSimbolos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Componentes/Componente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Componentes/Componente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Componentes/Tabla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Componentes/Tabla.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Token/LexemaError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Token/LexemaError.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Token/TipoToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Token/TipoToken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Token/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Token/Token.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UI/VentanaPrincipal.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/VentanaPrincipal.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UI/VentanaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/VentanaPrincipal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,28 +41,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.STATE": "left",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "/home/okkid-a/Documents/Practicas/Analizador-Lexico",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/home/okkid-a/Documents/Practicas/Analizador-Lexico/untitled/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.STATE&quot;: &quot;left&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/okkid-a/Documents/Practicas/Analizador-Lexico&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/home/okkid-a/Documents/Practicas/Analizador-Lexico/untitled/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.java.Start" />
@@ -118,6 +100,7 @@
       <workItem from="1691970470216" duration="8577000" />
       <workItem from="1692317953607" duration="20826000" />
       <workItem from="1692416549850" duration="54002000" />
+      <workItem from="1692642085774" duration="2012000" />
     </task>
     <servers />
   </component>
@@ -164,8 +147,8 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/Automata/TablaDeSimbolos.java</url>
-          <line>47</line>
-          <properties class="main.java.Automata.TablaDeSimbolos" method="getErrores">
+          <line>62</line>
+          <properties class="main.java.Automata.TablaDeSimbolos">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>

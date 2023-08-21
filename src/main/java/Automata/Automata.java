@@ -27,7 +27,7 @@ public class Automata {
         this.matriz = new MatrizTransiciones(transiciones);
         this.diccionario = new Diccionario();
         this.lexemaActual = "";
-        this.tablaDeSimbolos = new TablaDeSimbolos();
+        this.tablaDeSimbolos = new TablaDeSimbolos(diccionario);
         this.listaEstados = listaEstados;
         this.estadoInicial = listaEstados[0];
         this.estadoActual = listaEstados[0];
@@ -36,7 +36,7 @@ public class Automata {
     public ArrayList<Token> analizar(char[] texto){
         this.lexemaActual = "";
         textoAnalizar = texto;
-        this.tablaDeSimbolos = new TablaDeSimbolos();
+        this.tablaDeSimbolos = new TablaDeSimbolos(diccionario);
         int columnaInicio = 1;
         int filaInicio = 1;
         columnaActual = columnaInicio;
@@ -52,8 +52,6 @@ public class Automata {
                 completarToken(columnaInicio,filaInicio,actual, i);
                 columnaInicio = columnaActual;
                 filaInicio = filaActual;
-            }
-            if (i == texto.length-1){
             }
         }
         return tablaDeSimbolos.getTabla();
@@ -98,17 +96,7 @@ public class Automata {
         String patron = null;
         Dimension posicion = new Dimension(columnaInicio, filaInicio);
         if (estadoActual.isFinal()) {
-            if (tipoToken == TipoToken.BOOLEANO || tipoToken == TipoToken.KEYWORD || tipoToken == TipoToken.LOGICOS) {
-                try {
-                    patron = diccionario.buscar(lexemaActual);
-                } catch (NullPointerException e) {
-                    tipoToken = TipoToken.IDENTIFICADOR;
-                    patron = "IDENTIFICADOR";
-                }
-            } else {
-                patron = String.valueOf(estadoActual.getTipoToken().getExpresionRegular());
-            }
-            tablaDeSimbolos.addToken(posicion, tipoToken, patron, lexemaActual);
+            tablaDeSimbolos.addToken(posicion, tipoToken, patron, lexemaActual,estadoActual);
         } else if (!lexemaActual.equals(" ")) {
             tablaDeSimbolos.addError(posicion, lexemaActual);
             System.out.println(lexemaActual);
@@ -137,8 +125,13 @@ public class Automata {
                     lexemaActual = String.valueOf(c);
                 }
             } catch (IndexOutOfBoundsException e){
+
                 if (estadoProvicional.isFinal()) {
-                    tablaDeSimbolos.addToken(new Dimension(columnaActual, filaActual), estadoProvicional.getTipoToken(), estadoProvicional.getTipoToken().getExpresionRegular(), String.valueOf(c));
+                    tablaDeSimbolos.addToken(new Dimension(columnaActual, filaActual),
+                            estadoProvicional.getTipoToken(),
+                            estadoProvicional.getTipoToken().getExpresionRegular(),
+                            String.valueOf(c),
+                            estadoProvicional);
                     lexemaActual = "";
                 } else {
                     tablaDeSimbolos.addError(new Dimension(columnaActual,filaActual),String.valueOf(c));

@@ -1,5 +1,7 @@
 package main.java.Automata;
 
+import main.java.Estado.Estado;
+import main.java.Token.Diccionario;
 import main.java.Token.LexemaError;
 import main.java.Token.TipoToken;
 import main.java.Token.Token;
@@ -14,20 +16,33 @@ public class TablaDeSimbolos {
    private ArrayList<Token> tabla;
    private ArrayList<LexemaError> errores;
    private ArrayList<Token> lexemas;
+   private Diccionario diccionario;
 
-   public TablaDeSimbolos(){
+   public TablaDeSimbolos(Diccionario diccionario){
+      this.diccionario = new Diccionario();
       this.tabla = new ArrayList<Token>();
       this.errores = new ArrayList<LexemaError>();
       this.lexemas = new ArrayList<Token>();
    }
 
-   public void addToken(Dimension dimension, TipoToken tipoToken,String patron, String lexema){
+   public void addToken(Dimension dimension, TipoToken tipoToken, String patron, String lexema, Estado estadoActual){
+      if (tipoToken == TipoToken.BOOLEANO || tipoToken == TipoToken.KEYWORD || tipoToken == TipoToken.LOGICOS) {
+         try {
+            patron = diccionario.buscar(lexema);
+         } catch (NullPointerException e) {
+            tipoToken = TipoToken.IDENTIFICADOR;
+            patron = "IDENTIFICADOR";
+         }
+      } else {
+         patron = String.valueOf(estadoActual.getTipoToken().getExpresionRegular());
+      }
       Token nuevo = new Token(dimension,tipoToken,patron,lexema);
       this.lexemas.add(nuevo);
       this.tabla.add(nuevo);
    }
 
    public void addLexema(Dimension dimension, TipoToken tipoToken,String patron, String lexema){
+
       Token nuevo = new Token(dimension,tipoToken,patron,lexema);
       this.lexemas.add(nuevo);
    }
