@@ -1,6 +1,7 @@
 package main.java.Componentes;
 
 import main.java.Automata.Automata;
+import main.java.Token.LexemaError;
 import main.java.Token.Token;
 
 import javax.swing.*;
@@ -16,26 +17,41 @@ public class Tabla {
 
     }
 
-    public void recrearTabla(JPanel panel, JScrollPane jScrollPane, Automata automata, JTextArea jTextArea,JFrame jFrame){
+    public void recrearTabla(JPanel panel, JScrollPane jScrollPane, Automata automata, JTextPane jTextArea,JFrame jFrame){
         panel.removeAll();
         panel.setLayout(new GridLayout());
-            JTable resultadosTable = crearResultadosLexema(automata.analizar(jTextArea.getText().toCharArray()));
-            jScrollPane = new JScrollPane(resultadosTable);
-            jScrollPane.add(resultadosTable);
-            jScrollPane.setVisible(true);
-            jScrollPane.getViewport().add(resultadosTable);
-            jScrollPane.repaint();
-            panel.add(jScrollPane);
-            panel.revalidate();
+        JTable resultadosTable = crearResultadosLexema(automata.analizar(jTextArea.getText().toCharArray()));
+        jScrollPane = new JScrollPane(resultadosTable);
+        jScrollPane.add(resultadosTable);
+        jScrollPane.setVisible(true);
+        jScrollPane.getViewport().add(resultadosTable);
+        jScrollPane.repaint();
+        panel.add(jScrollPane);
+        panel.revalidate();
     }
 
     public JTable crearResultadosLexema(ArrayList<Token> resultados) {
         Token[] resultadosToken = listarTokens(resultados);
-        System.out.println(resultados.size());
         String[] header = new String[]{"Tipo de Token","Patron","Lexema", "Fila", "Columna"};
         String[][] datos = crearListadoResultado(resultadosToken);
         return crearTabla(datos,header);
 
+    }
+
+    public JTable crearTablaError(ArrayList<LexemaError> errors) {
+        LexemaError[] errores = listarErrores(errors);
+        String[] header = new String[]{"Lexema","Columna","Fila"};
+        String[][] datos = crearListadoErrores(errores);
+        return crearTabla(datos,header);
+
+    }
+
+    public LexemaError[] listarErrores(ArrayList<LexemaError> errors){
+        LexemaError[] tokens1 = new LexemaError[errors.size()];
+        for (int k = 0; k < errors.size();k++){
+            tokens1[k] = errors.get(k);
+        }
+        return tokens1;
     }
 
     public Token[] listarTokens(ArrayList<Token> tokens){
@@ -46,7 +62,7 @@ public class Tabla {
         return tokens1;
     }
 
-    public static String[][] crearListadoResultado(Token[] tokens){
+    public String[][] crearListadoResultado(Token[] tokens){
         String[][] datosEnteros = new String[tokens.length][];
         for (int k = 0; k < tokens.length;k++){
             datosEnteros[k] = new String[]{String.valueOf(tokens[k].getTipo()),String.valueOf(tokens[k].getPatron()),tokens[k].getLexema(), String.valueOf(tokens[k].getPosicion().getWidth()),
@@ -54,7 +70,21 @@ public class Tabla {
         }
         return datosEnteros;
     }
-    public static JTable crearTabla(String[][] datosFilas, String[] datosHeader) {
+
+    public String[][] crearListadoErrores(LexemaError[] errors){
+        String[][] datosEnteros = new String[errors.length][];
+        for (int k = 0; k < errors.length;k++){
+            LexemaError error = errors[k];
+            String lexema = error.getLexema();
+            String columna = String.valueOf(error.getColumna());
+            String fila = String.valueOf(error.getFila());
+            datosEnteros[k] = new String[]{lexema,columna,fila};
+        }
+        return datosEnteros;
+    }
+
+
+    public JTable crearTabla(String[][] datosFilas, String[] datosHeader) {
         DefaultTableModel tableModel = new DefaultTableModel(datosFilas, datosHeader) {
             @Override
             public boolean isCellEditable(int row, int column) {

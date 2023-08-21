@@ -93,27 +93,27 @@ public class Automata {
 
     }
 
-    public void completarToken(int columnaInicio, int filaInicio, char actual, int posicionTexto){
+    public void completarToken(int columnaInicio, int filaInicio, char actual, int posicionTexto) {
         TipoToken tipoToken = estadoActual.getTipoToken();
         String patron = null;
-        Dimension posicion = new Dimension(columnaInicio,filaInicio);
-        if (estadoActual.isFinal()){
-            if(tipoToken == TipoToken.BOOLEANO || tipoToken == TipoToken.KEYWORD || tipoToken == TipoToken.LOGICOS){
+        Dimension posicion = new Dimension(columnaInicio, filaInicio);
+        if (estadoActual.isFinal()) {
+            if (tipoToken == TipoToken.BOOLEANO || tipoToken == TipoToken.KEYWORD || tipoToken == TipoToken.LOGICOS) {
                 try {
                     patron = diccionario.buscar(lexemaActual);
-                } catch (NullPointerException e){
+                } catch (NullPointerException e) {
                     tipoToken = TipoToken.IDENTIFICADOR;
                     patron = "IDENTIFICADOR";
                 }
             } else {
                 patron = String.valueOf(estadoActual.getTipoToken().getExpresionRegular());
             }
-            tablaDeSimbolos.addToken(posicion,tipoToken,patron,lexemaActual);
-        } else if (!lexemaActual.equals(" ")){
-            tablaDeSimbolos.addError(posicion,lexemaActual);
+            tablaDeSimbolos.addToken(posicion, tipoToken, patron, lexemaActual);
+        } else if (!lexemaActual.equals(" ")) {
+            tablaDeSimbolos.addError(posicion, lexemaActual);
             System.out.println(lexemaActual);
         }
-        limpiarLexema(actual,posicionTexto);
+        limpiarLexema(actual, posicionTexto);
     }
 
     public void limpiarLexema(char actual, int siguiente){
@@ -137,10 +137,13 @@ public class Automata {
                     lexemaActual = String.valueOf(c);
                 }
             } catch (IndexOutOfBoundsException e){
-                tablaDeSimbolos.addToken(new Dimension(columnaActual,filaActual),estadoProvicional.getTipoToken(),
-                        String.valueOf(estadoProvicional.getTipoToken().getExpresionRegular()),String.valueOf(c));
-                lexemaActual = "";
-
+                if (estadoProvicional.isFinal()) {
+                    tablaDeSimbolos.addToken(new Dimension(columnaActual, filaActual), estadoProvicional.getTipoToken(), estadoProvicional.getTipoToken().getExpresionRegular(), String.valueOf(c));
+                    lexemaActual = "";
+                } else {
+                    tablaDeSimbolos.addError(new Dimension(columnaActual,filaActual),String.valueOf(c));
+                    lexemaActual = "";
+                }
             }
         } catch (IndexOutOfBoundsException e){
             tablaDeSimbolos.addError(new Dimension(columnaActual,filaActual),String.valueOf(c));
@@ -151,8 +154,7 @@ public class Automata {
 
     }
 
-    public void limpiar(){
-
+    public TablaDeSimbolos getTablaDeSimbolos() {
+        return tablaDeSimbolos;
     }
-
 }

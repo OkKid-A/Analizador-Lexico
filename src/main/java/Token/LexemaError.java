@@ -11,4 +11,16 @@ public class LexemaError {
         this.lexema = lexema;
         this.posicion = posicion;
     }
+
+    public String getLexema() {
+        return lexema;
+    }
+
+    public int getColumna() {
+        return (int) posicion.getWidth();
+    }
+
+    public int getFila(){
+        return (int) posicion.getHeight();
+    }
 }

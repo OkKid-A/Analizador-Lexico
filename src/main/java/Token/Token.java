@@ -32,4 +32,8 @@ public class Token {
     public Dimension getPosicion() {
         return posicion;
     }
+
+    public TipoToken getTipoToken() {
+        return tipoToken;
+    }
 }

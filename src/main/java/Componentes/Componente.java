@@ -11,7 +11,7 @@ public class Componente {
 
     }
 
-    public void escribirNumeroLinea(JTextArea textArea1,JTextArea numeroLinea) {
+    public void escribirNumeroLinea(JEditorPane textArea1,JTextArea numeroLinea) {
         textArea1.getDocument().addDocumentListener(new DocumentListener() {
             public String enumerarLineas() {
                 int ultimaLinea = textArea1.getDocument().getLength();

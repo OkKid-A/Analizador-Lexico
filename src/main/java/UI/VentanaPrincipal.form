@@ -3,7 +3,7 @@
   <grid id="27dc6" binding="globalPanel" layout-manager="GridLayoutManager" row-count="4" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="188" width="565" height="167"/>
+      <xy x="20" y="188" width="1353" height="529"/>
     </constraints>
     <properties>
       <autoscrolls value="true"/>
@@ -11,17 +11,11 @@
     </properties>
     <border type="none"/>
     <children>
-      <component id="53c7f" class="javax.swing.JButton" binding="cargarArchivoButton" default-binding="true">
-        <constraints>
-          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Cargar Archivo"/>
-        </properties>
-      </component>
       <scrollpane id="6bb26" binding="editorScrollPane">
         <constraints>
-          <grid row="0" column="0" row-span="3" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="0" row-span="3" col-span="1" vsize-policy="4" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="1200" height="500"/>
+          </grid>
         </constraints>
         <properties/>
         <border type="none"/>
@@ -34,16 +28,21 @@
             <children>
               <component id="17223" class="javax.swing.JTextArea" binding="numeroLinea">
                 <constraints>
-                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <minimum-size width="5" height="100"/>
+                    <preferred-size width="5" height="50"/>
+                    <maximum-size width="50" height="-1"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <text value=""/>
                 </properties>
               </component>
-              <component id="7a586" class="javax.swing.JTextArea" binding="editorTexto">
+              <component id="7df38" class="javax.swing.JTextPane" binding="editorTexto">
                 <constraints>
-                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
-                    <preferred-size width="150" height="50"/>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <minimum-size width="300" height="100"/>
+                    <preferred-size width="300" height="100"/>
                   </grid>
                 </constraints>
                 <properties>
@@ -54,17 +53,9 @@
           </grid>
         </children>
       </scrollpane>
-      <component id="b9304" class="javax.swing.JButton" binding="procesarTextoButton" default-binding="true">
-        <constraints>
-          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Procesar Texto"/>
-        </properties>
-      </component>
       <scrollpane id="453e3" binding="resultadosScrollPane">
         <constraints>
-          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties/>
         <border type="none"/>
@@ -87,6 +78,30 @@
           </grid>
         </children>
       </scrollpane>
+      <component id="b9304" class="javax.swing.JButton" binding="procesarTextoButton" default-binding="true">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Procesar Texto"/>
+        </properties>
+      </component>
+      <component id="53c7f" class="javax.swing.JButton" binding="cargarArchivoButton" default-binding="true">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Cargar Archivo"/>
+        </properties>
+      </component>
+      <component id="445d3" class="javax.swing.JButton" binding="reporteErroresButton" default-binding="true">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Reporte Errores"/>
+        </properties>
+      </component>
     </children>
   </grid>
 </form>
