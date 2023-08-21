@@ -8,9 +8,13 @@ public class Token {
     private String tipo;
     private String patron;
     private Dimension posicion;
+    private TipoToken tipoToken;
 
     public Token(Dimension posicion, TipoToken tipoToken, String patron, String lexema){
-
+        this.posicion = posicion;
+        this.tipoToken = tipoToken;
+        this.patron = patron;
+        this.lexema = lexema;
     }
 
     public String getLexema() {
@@ -18,7 +22,7 @@ public class Token {
     }
 
     public String getTipo() {
-        return tipo;
+        return String.valueOf(tipoToken);
     }
 
     public String getPatron() {

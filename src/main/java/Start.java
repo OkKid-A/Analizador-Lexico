@@ -43,13 +43,13 @@ public class Start {
         listaEstados[18] = new Estado(18,TipoToken.COMPARADOR);
         listaEstados[19] = new Estado(19);
         listaEstados[20] = new Estado(20);
-        listaEstados[21] = new Estado(21);
+        listaEstados[21] = new Estado(21,TipoToken.COMENTARIO);
         listaEstados[22] = new Estado(22,TipoToken.ASIGNADOR);
         listaEstados[23] = new Estado(23,TipoToken.ASIGNADOR);
     }
 
     public void setTransiciones() {
-        this.transiciones = new int[24][15];
+        this.transiciones = new int[24][16];
         transiciones[0] = new int[]{1,3,2,4,5,6,7,8,23,11,9,10,12,0,11,0};
         transiciones[1][Simbolo.LETRA.getNumeroSimbolo()] = 1;
         transiciones[1][Simbolo.DIGITO.getNumeroSimbolo()] = 3;
@@ -71,7 +71,8 @@ public class Start {
         transiciones[15][Simbolo.DIGITO.getNumeroSimbolo()] = 15;
         transiciones[19] = new int[]{19,19,19,19,19,19,19,19,19,19,13,19,19,19,19,21};
         transiciones[20] = new int[]{20,20,20,20,20,20,20,20,20,20,20,13,20,20,20,21};
-        transiciones[21] = new int[]{21,21,21,21,21,21,21,21,21,21,21,21,21,21,14,21};
+        transiciones[21] = new int[]{21,21,21,21,21,21,21,21,21,21,21,21,21,14,21,21};
         transiciones[23][Simbolo.IGUAL.getNumeroSimbolo()] = 18;
+        System.out.println(transiciones[0][15]);
     }
 }

@@ -10,14 +10,16 @@ import java.awt.event.ActionListener;
 
 public class VentanaPrincipal extends JFrame{
     private JButton Aceptar;
-    public JPanel panel1;
+    public JPanel globalPanel;
     private JButton procesarTextoButton;
     private JButton cargarArchivoButton;
     private JTextArea editorTexto;
     private JTextArea numeroLinea;
-    private JTable lexemasTabla;
     private JPanel editorPanel;
     private JScrollPane editorScrollPane;
+    private JScrollPane resultadosScrollPane;
+    private JPanel resultadosPanel;
+    private JTable resultadosTable;
     private Componente componente;
     private Tabla tabla;
     private  Automata automata;
@@ -43,14 +45,14 @@ public class VentanaPrincipal extends JFrame{
         procesarTextoButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                tabla.recrearTabla(editorPanel,editorScrollPane,automata,editorTexto,redundar());
+                tabla.recrearTabla(resultadosPanel,resultadosScrollPane,automata,editorTexto,redundar());
             }
         });
     }
 
     private void fixComponents(){
         JFrame frame = new JFrame("VentanaPrincipal");
-        frame.setContentPane(this.panel1);
+        frame.setContentPane(globalPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);

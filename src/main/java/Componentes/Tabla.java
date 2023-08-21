@@ -20,21 +20,19 @@ public class Tabla {
         panel.removeAll();
         panel.setLayout(new GridLayout());
             JTable resultadosTable = crearResultadosLexema(automata.analizar(jTextArea.getText().toCharArray()));
-            jScrollPane.removeAll();
             jScrollPane = new JScrollPane(resultadosTable);
             jScrollPane.add(resultadosTable);
             jScrollPane.setVisible(true);
             jScrollPane.getViewport().add(resultadosTable);
+            jScrollPane.repaint();
             panel.add(jScrollPane);
-            panel.repaint();
-            jFrame.repaint();
-            jFrame.revalidate();
+            panel.revalidate();
     }
 
     public JTable crearResultadosLexema(ArrayList<Token> resultados) {
         Token[] resultadosToken = listarTokens(resultados);
         System.out.println(resultados.size());
-        String[] header = new String[]{"Tipo de Token","Lexema", "Fila", "Columna"};
+        String[] header = new String[]{"Tipo de Token","Patron","Lexema", "Fila", "Columna"};
         String[][] datos = crearListadoResultado(resultadosToken);
         return crearTabla(datos,header);
 
@@ -51,7 +49,7 @@ public class Tabla {
     public static String[][] crearListadoResultado(Token[] tokens){
         String[][] datosEnteros = new String[tokens.length][];
         for (int k = 0; k < tokens.length;k++){
-            datosEnteros[k] = new String[]{String.valueOf(tokens[k].getTipo()),tokens[k].getLexema(), String.valueOf(tokens[k].getPosicion().getWidth()),
+            datosEnteros[k] = new String[]{String.valueOf(tokens[k].getTipo()),String.valueOf(tokens[k].getPatron()),tokens[k].getLexema(), String.valueOf(tokens[k].getPosicion().getWidth()),
                     String.valueOf(tokens[k].getPosicion().getHeight())};
         }
         return datosEnteros;

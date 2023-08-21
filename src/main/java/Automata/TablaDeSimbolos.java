@@ -16,10 +16,12 @@ public class TablaDeSimbolos {
 
    public TablaDeSimbolos(){
       this.tabla = new ArrayList<Token>();
+      this.errores = new ArrayList<LexemaError>();
    }
 
    public void addToken(Dimension dimension, TipoToken tipoToken,String patron, String lexema){
-      tabla.add(new Token(dimension,tipoToken,patron,lexema));
+      Token nuevo = new Token(dimension,tipoToken,patron,lexema);
+      this.tabla.add(nuevo);
    }
 
    public void addError(Dimension dimension,String error){

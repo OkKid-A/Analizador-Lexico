@@ -5,15 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37fbbb6a-3509-4cc6-926c-620f87144888" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Start.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Automata/Automata.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Automata/Automata.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Automata/MatrizTransiciones.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Automata/MatrizTransiciones.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Automata/TablaDeSimbolos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Automata/TablaDeSimbolos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Componentes/Tabla$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Componentes/Tabla$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Componentes/Tabla.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Componentes/Tabla.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Start.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Start.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Token/TipoToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Token/TipoToken.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Token/Token.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Token/Token.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/UI/VentanaPrincipal$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/UI/VentanaPrincipal$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/UI/VentanaPrincipal$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/UI/VentanaPrincipal$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/UI/VentanaPrincipal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/UI/VentanaPrincipal.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Automata/Automata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Automata/Automata.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Automata/MatrizTransiciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Automata/MatrizTransiciones.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Automata/TablaDeSimbolos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Automata/TablaDeSimbolos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Token/Simbolo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Token/Simbolo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Componentes/Tabla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Componentes/Tabla.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Start.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Token/TipoToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Token/TipoToken.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Token/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Token/Token.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UI/VentanaPrincipal.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/VentanaPrincipal.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UI/VentanaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/VentanaPrincipal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +42,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -55,6 +70,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "/home/okkid-a/Documents/Practicas/Analizador-Lexico/untitled/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
@@ -99,12 +115,23 @@
       <workItem from="1691804572643" duration="4967000" />
       <workItem from="1691970470216" duration="8577000" />
       <workItem from="1692317953607" duration="20826000" />
-      <workItem from="1692416549850" duration="13595000" />
+      <workItem from="1692416549850" duration="40264000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -114,6 +141,25 @@
           <line>15</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Automata/MatrizTransiciones.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Automata/Automata.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Automata/Automata.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="9" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
