@@ -1,7 +1,6 @@
 package main.java.UI;
 
 import main.java.Automata.Automata;
-import main.java.Componentes.ErroresTabla;
 import main.java.Componentes.Tabla;
 import main.java.Token.LexemaError;
 

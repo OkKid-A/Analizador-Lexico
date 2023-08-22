@@ -1,10 +1,13 @@
 package main.java;
 
 import main.java.Automata.Automata;
+import main.java.Componentes.Graficador;
 import main.java.Estado.Estado;
 import main.java.Token.Simbolo;
 import main.java.Token.TipoToken;
 import main.java.UI.VentanaPrincipal;
+
+import javax.swing.*;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
@@ -13,11 +16,18 @@ public class Start {
     private Estado[] listaEstados;
     private int[][] transiciones;
     public static void main(String[] args) {
+
         Start start = new Start();
         start.setTransiciones();
         start.setListaEstados();
         Automata automata = new Automata(start.transiciones, start.listaEstados);
-        VentanaPrincipal ventanaPrincipal = new VentanaPrincipal(automata);
+
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                VentanaPrincipal ventanaPrincipal = new VentanaPrincipal(automata);
+            }
+        });
     }
 
     private void setListaEstados(){
@@ -69,8 +79,8 @@ public class Start {
         transiciones[10] = new int[]{20,20,20,20,20,20,20,20,20,20,20,0,20,20,20,21};
         transiciones[12] = new int[]{21,21,21,21,21,21,21,21,21,21,21,21,21,21,0,21};
         transiciones[15][Simbolo.DIGITO.getNumeroSimbolo()] = 15;
-        transiciones[19] = new int[]{19,19,19,19,19,19,19,19,19,19,13,19,19,19,19,21};
-        transiciones[20] = new int[]{20,20,20,20,20,20,20,20,20,20,20,13,20,20,20,21};
+        transiciones[19] = new int[]{19,19,19,19,19,19,19,19,19,19,13,19,19,19,19,19};
+        transiciones[20] = new int[]{20,20,20,20,20,20,20,20,20,20,20,13,20,20,20,20};
         transiciones[21] = new int[]{21,21,21,21,21,21,21,21,21,21,21,21,21,14,21,21};
         transiciones[23][Simbolo.IGUAL.getNumeroSimbolo()] = 18;
         System.out.println(transiciones[0][15]);

@@ -23,6 +23,7 @@ public class Colorante {
     public void colorearTexto(JTextPane editorTexto, ArrayList<Token> lexemas){
         editorTexto.setText("");
         lexemas.forEach((i) -> anadirToken(editorTexto,i.getLexema(),i.getTipoToken().color));
+        anadirToken(editorTexto,"",Color.BLACK);
     }
 
     public void anadirToken(JTextPane editorTexto, String token, Color color){

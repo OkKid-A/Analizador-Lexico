@@ -3,6 +3,7 @@ package main.java.UI;
 import main.java.Automata.Automata;
 import main.java.Componentes.Colorante;
 import main.java.Componentes.Componente;
+import main.java.Componentes.Graficador;
 import main.java.Componentes.Tabla;
 
 import javax.swing.*;
@@ -27,12 +28,14 @@ public class VentanaPrincipal extends JFrame {
     private Tabla tabla;
     private  Automata automata;
     private Colorante colorante;
+    private Graficador graficador;
 
     public VentanaPrincipal(Automata automata){
         this.componente = new Componente();
         this.tabla = new Tabla();
         this.automata = automata;
         this.colorante = new Colorante();
+        this.graficador  = new Graficador();
         fixComponents();
     }
 
@@ -49,7 +52,7 @@ public class VentanaPrincipal extends JFrame {
         procesarTextoButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                tabla.recrearTabla(resultadosPanel,resultadosScrollPane,automata,editorTexto,redundar());
+                JTable table = tabla.recrearTabla(resultadosPanel,resultadosScrollPane,automata,editorTexto,redundar());
                 colorante.colorearTexto(editorTexto,automata.getTablaDeSimbolos().getLexemas());
             }
         });
@@ -70,7 +73,6 @@ public class VentanaPrincipal extends JFrame {
         frame.setVisible(true);
         setButtons();
         componente.escribirNumeroLinea(editorTexto,numeroLinea);
-
     }
 
     private JFrame redundar(){

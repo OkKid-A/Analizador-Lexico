@@ -1,5 +1,7 @@
 package main.java.Componentes;
 
+import main.java.Automata.Automata;
+
 import javax.swing.*;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
