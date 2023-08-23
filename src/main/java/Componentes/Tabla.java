@@ -1,6 +1,7 @@
 package main.java.Componentes;
 
 import main.java.Automata.Automata;
+import main.java.Lector.LectorArchivo;
 import main.java.Token.LexemaError;
 import main.java.Token.Token;
 import main.java.UI.VentanaErrores;
@@ -30,6 +31,21 @@ public class Tabla {
         panel.removeAll();
         panel.setLayout(new GridLayout());
         JTable resultadosTable = crearResultadosLexema(automata.analizar(jTextArea.getText().toCharArray()));
+        return setTabla(panel, resultadosTable);
+    }
+
+    public JTable recrearTabla(JPanel panel, JScrollPane jScrollPane, Automata automata, JTextPane jTextArea,String path,JFrame jFrame){
+        panel.removeAll();
+        panel.setLayout(new GridLayout());
+        LectorArchivo lectorArchivo = new LectorArchivo();
+        char[] caracteres = lectorArchivo.fetchFullText(path);
+        JTable resultadosTable = crearResultadosLexema(automata.analizar(caracteres));
+        jTextArea.setText(caracteres.toString());
+        return setTabla(panel, resultadosTable);
+    }
+
+    private JTable setTabla(JPanel panel, JTable resultadosTable) {
+        JScrollPane jScrollPane;
         jScrollPane = new JScrollPane(resultadosTable);
         jScrollPane.add(resultadosTable);
         jScrollPane.setVisible(true);
@@ -75,7 +91,8 @@ public class Tabla {
     public Object[][] crearListadoResultado(Token[] tokens){
         Object[][] datosEnteros = new Object[tokens.length][];
         for (int k = 0; k < tokens.length;k++){
-            datosEnteros[k] = new Object[]{String.valueOf(tokens[k].getTipo()),String.valueOf(tokens[k].getPatron()),tokens[k].getLexema(), String.valueOf(tokens[k].getPosicion().getWidth()),
+            datosEnteros[k] = new Object[]{String.valueOf(tokens[k].getTipo()),String.valueOf(tokens[k].getPatron()),
+                    tokens[k].getLexema(), String.valueOf(tokens[k].getPosicion().getWidth()),
                     String.valueOf(tokens[k].getPosicion().getHeight()), "Ver"};
         }
         return datosEnteros;
@@ -136,26 +153,6 @@ public class Tabla {
         return jTable;
     }
 
-    public void setGraficosListener(JTable tabla, ArrayList<Token> tokens, Graficador graficador){
-        for (int i = 0; i < tokens.size(); i++) {
-            System.out.println(tabla.getColumn("Grafico"));
-            JButton jButton = (JButton) tabla.getValueAt(i,5);
 
-            Token token = tokens.get(i);
-            jButton.addActionListener(new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    BufferedImage image = null;
-                    graficador.crearGraph(token.getLexema(),token.getLexema().toCharArray());
-                    try {
-                        image = ImageIO.read(new File(token.getLexema() + ".png"));
-                    } catch (IOException ex) {
-                        throw new RuntimeException(ex);
-                    }
-                    VentanaGraficos ventanaGraficos = new VentanaGraficos(new ImageIcon(image));
-                }
-            });
-        }
-    }
 
 }

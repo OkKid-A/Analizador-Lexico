@@ -5,42 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37fbbb6a-3509-4cc6-926c-620f87144888" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Automata/Automata.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Automata/MatrizTransiciones.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Automata/TablaDeSimbolos.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Automata/Transicion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Componentes/Colorante.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Componentes/Componente$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Componentes/Componente$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Componentes/Componente.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Componentes/ErroresTabla.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Componentes/Tabla$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Componentes/Tabla.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Estado/Estado.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Lector/LectorArchivo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Start.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Token/Diccionario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Token/LexemaError.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Token/Simbolo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Token/TipoToken.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/Token/Token.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/UI/Ventana.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/UI/VentanaErrores.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/UI/VentanaPrincipal$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/UI/VentanaPrincipal$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/UI/VentanaPrincipal$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Analizador-Lexico/main/java/UI/VentanaPrincipal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Componentes/Colorante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Componentes/Colorante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Componentes/Componente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Componentes/Componente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Componentes/ErroresTabla.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Componentes/ColumnaBotones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Componentes/ColumnaBotones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Componentes/Graficador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Componentes/Graficador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Componentes/Tabla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Componentes/Tabla.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Start.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Token/TipoToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Token/TipoToken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UI/Ventana.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UI/VentanaErrores.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/VentanaErrores.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UI/VentanaGraficos.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/VentanaGraficos.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UI/VentanaGraficos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/VentanaGraficos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UI/VentanaPrincipal.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/VentanaPrincipal.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UI/VentanaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/VentanaPrincipal.java" afterDir="false" />
     </list>
@@ -86,6 +58,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.STATE": "left",
     "WebServerToolWindowFactoryState": "false",
+    "extract.method.default.visibility": "private",
     "jdk.selected.JAVA_MODULE": "11",
     "last_opened_file_path": "/home/okkid-a/Documents/Practicas/Analizador-Lexico",
     "node.js.detected.package.eslint": "true",
@@ -94,7 +67,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "/home/okkid-a/Documents/Practicas/Analizador-Lexico/untitled/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
@@ -141,7 +114,7 @@
       <workItem from="1692416549850" duration="54002000" />
       <workItem from="1692642085774" duration="2367000" />
       <workItem from="1692650263670" duration="1911000" />
-      <workItem from="1692653466121" duration="21005000" />
+      <workItem from="1692653466121" duration="31864000" />
     </task>
     <servers />
   </component>
@@ -168,14 +141,14 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Componentes/Tabla.java</url>
-          <line>154</line>
-          <option name="timeStamp" value="15" />
+          <url>file://$PROJECT_DIR$/src/main/java/Componentes/Graficador.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Componentes/Tabla.java</url>
-          <line>144</line>
-          <option name="timeStamp" value="16" />
+          <url>file://$PROJECT_DIR$/src/main/java/Componentes/Graficador.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
         <breakpoint type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />

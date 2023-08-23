@@ -75,8 +75,8 @@ public class Start {
         transiciones[6][Simbolo.DIAGONAL.getNumeroSimbolo()] = 17;
         transiciones[7][Simbolo.IGUAL.getNumeroSimbolo()]=transiciones[8][Simbolo.IGUAL.getNumeroSimbolo()]=
                 transiciones[23][Simbolo.IGUAL.getNumeroSimbolo()] = 18 ;
-        transiciones[9] = new int[]{19,19,19,19,19,19,19,19,19,19,0,19,19,19,19,21};
-        transiciones[10] = new int[]{20,20,20,20,20,20,20,20,20,20,20,0,20,20,20,21};
+        transiciones[9] = new int[]{19,19,19,19,19,19,19,19,19,19,0,19,19,19,19,19};
+        transiciones[10] = new int[]{20,20,20,20,20,20,20,20,20,20,20,0,20,20,20,20};
         transiciones[12] = new int[]{21,21,21,21,21,21,21,21,21,21,21,21,21,21,0,21};
         transiciones[15][Simbolo.DIGITO.getNumeroSimbolo()] = 15;
         transiciones[19] = new int[]{19,19,19,19,19,19,19,19,19,19,13,19,19,19,19,19};

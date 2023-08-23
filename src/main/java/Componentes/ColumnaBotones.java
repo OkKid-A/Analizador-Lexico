@@ -18,6 +18,7 @@ import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.FileSystems;
 import java.util.ArrayList;
 
 public class ColumnaBotones extends AbstractCellEditor implements TableCellRenderer, TableCellEditor, ActionListener, MouseListener {
@@ -57,15 +58,16 @@ public class ColumnaBotones extends AbstractCellEditor implements TableCellRende
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                Token token = tokens.get(fila);
                 Graficador graficador = new Graficador();
                 BufferedImage image = null;
-                graficador.crearGraph(tokens.get(fila).getLexema(),tokens.get(fila).getLexema().toCharArray());
+                graficador.crearGraph(token.getLexema(),token.getLexema().toCharArray());
                 try {
-                    image = ImageIO.read(new File(tokens.get(fila).getLexema() + ".png"));
+                    image = ImageIO.read(new File("Graficos"+ FileSystems.getDefault().getSeparator()+ token.getLexema() + ".png"));
                 } catch (IOException ex) {
                     throw new RuntimeException(ex);
                 }
-               VentanaGraficos ventanaGraficos = new VentanaGraficos(new ImageIcon(image));
+               VentanaGraficos ventanaGraficos = new VentanaGraficos(new ImageIcon(image),String.valueOf(token.getTipoToken()),token.getPosicion());
             }
         };
         ActionEvent evento = new ActionEvent(
@@ -89,7 +91,7 @@ public class ColumnaBotones extends AbstractCellEditor implements TableCellRende
 
     @Override
     public void mouseReleased(MouseEvent e) {
-            if (esEditorDeBotones && table.isEditing()) {
+                if (esEditorDeBotones && table.isEditing()) {
                 table.getCellEditor().stopCellEditing();
                 esEditorDeBotones = false;
             }

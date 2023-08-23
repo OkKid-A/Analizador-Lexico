@@ -10,6 +10,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ComponentAdapter;
+import java.io.File;
 
 public class VentanaPrincipal extends JFrame {
     private JButton Aceptar;
@@ -45,7 +46,10 @@ public class VentanaPrincipal extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 JFileChooser fileChooser = new JFileChooser();
                 fileChooser.showSaveDialog(null);
-                System.out.println(fileChooser.getSelectedFile().getAbsolutePath());
+                String path = fileChooser.getSelectedFile().getAbsolutePath();
+                System.out.println(path);
+                JTable table = tabla.recrearTabla(resultadosPanel,resultadosScrollPane,automata,editorTexto,path,redundar());
+                colorante.colorearTexto(editorTexto,automata.getTablaDeSimbolos().getLexemas());
             }
         });
 
