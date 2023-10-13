@@ -1,5 +1,7 @@
 package org.cunoc.analizadorsintactico.Parser;
 
+import org.cunoc.analizadorsintactico.analizadorLexico.Token.Token;
+
 import java.util.*;
 
 public class Parser {
@@ -19,7 +21,85 @@ public class Parser {
         tablaTransiciones = new TablaTransiciones(terminales,noTerminales,simboloInicio,producciones);
     }
 
-    public void Analizar(){
+    public boolean Analizar(ArrayList<Token> tokensLexicos){
+        Stack<String> pila = new Stack<>();
+        pila.push("$");
+        int indexToken = 0;
+        while (!pila.isEmpty()){
+            String top =  pila.pop();
+            Token tokenActual = tokensLexicos.get(indexToken);
+            if (terminales.contains(top)){
+                if (compararTerminales(top,tokenActual)){
+                    indexToken++;
+                } else {
+                    System.out.println("Error de sintaxis, se esperaba:" + top + " cerca de " + tokenActual.getLexema());
+                    while (!pila.isEmpty() && !tablaTransiciones.getSiguientes().get(top).contains(seleccionarTipo(top,tokenActual))){
+                        top = pila.pop();
+                    }
+                    if (pila.isEmpty()){
+                        System.out.println("Se finalizo el texto sin completar la produccion.");
+                        return false;
+                    }
+                }
+            } else {
+                String produccion  = tablaTransiciones.getTablaTransiciones().get(top).get(seleccionarSegunToken(tokenActual));
+                if (produccion == null){
+                    System.out.println("Error de sintasix: no hay produccion para " + top + ", " + seleccionarSegunToken(tokenActual));
+                    while (!pila.isEmpty() && !tablaTransiciones.getSiguientes().get(top).contains(seleccionarTipo(top,tokenActual))){
+                        top = pila.pop();
+                    }
+                    if (pila.isEmpty()){
+                        System.out.println("Se finalizo el texto sin completar la produccion.");
+                        return false;
+                    }
+                }
+                if (!produccion.equals(EPSILON)){
+                    List<String> derechaProduccion = Arrays.asList(produccion.split(" "));
+                    Collections.reverse(derechaProduccion);
+                    for (String simbolo : derechaProduccion){
+                        pila.push(simbolo);
+                    }
+                }
+            }
+        }
+        return true;
+    }
 
+    private boolean compararTerminales(String lexema, Token token){
+        Set<String> tipos = diferenciarTokens();
+        if (tipos.contains(lexema)){
+            return lexema.equals(token.getTipoToken().toString());
+        } else {
+            return lexema.equals(token.getLexema());
+        }
+    }
+
+    private String seleccionarTipo(String lexema, Token token){
+        Set<String> tipos = diferenciarTokens();
+        if (tipos.contains(lexema)){
+            return token.getTipo();
+        } else {
+            return token.getLexema();
+        }
+    }
+
+    private String seleccionarSegunToken(Token token){
+        Set<String> tipos = diferenciarTokens();
+        if (tipos.contains(token.getTipo())){
+            return token.getTipo();
+        } else {
+            return token.getLexema();
+        }
+    }
+
+    private Set<String> diferenciarTokens() {
+        Set<String> tipos = new HashSet<>();
+        tipos.add("IDENTIFICADOR");
+        tipos.add("ENTERO");
+        tipos.add("DECIMAL");
+        tipos.add("CADENA");
+        tipos.add("COMENTARIO");
+        tipos.add("ERROR");
+        return tipos;
     }
 }

@@ -1,10 +1,10 @@
 package org.cunoc.analizadorsintactico.analizadorLexico.Automata;
 
-import main.java.Estado.Estado;
-import main.java.Token.Diccionario;
-import main.java.Token.LexemaError;
-import main.java.Token.TipoToken;
-import main.java.Token.Token;
+import org.cunoc.analizadorsintactico.analizadorLexico.Estado.Estado;
+import org.cunoc.analizadorsintactico.analizadorLexico.Token.Diccionario;
+import org.cunoc.analizadorsintactico.analizadorLexico.Token.LexemaError;
+import org.cunoc.analizadorsintactico.analizadorLexico.Token.TipoToken;
+import org.cunoc.analizadorsintactico.analizadorLexico.Token.Token;
 
 import java.awt.*;
 import java.util.ArrayList;

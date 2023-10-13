@@ -1,6 +1,6 @@
 package org.cunoc.analizadorsintactico.analizadorLexico.Estado;
 
-import main.java.Token.TipoToken;
+import org.cunoc.analizadorsintactico.analizadorLexico.Token.TipoToken;
 
 public class Estado {
 

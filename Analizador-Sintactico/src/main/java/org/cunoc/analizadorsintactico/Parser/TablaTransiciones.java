@@ -160,4 +160,12 @@ public class TablaTransiciones {
     public void setSiguientes(HashMap<String, Set<String>> siguientes) {
         this.siguientes = siguientes;
     }
+
+    public HashMap<String, HashMap<String, String>> getTablaTransiciones() {
+        return tablaTransiciones;
+    }
+
+    public void setTablaTransiciones(HashMap<String, HashMap<String, String>> tablaTransiciones) {
+        this.tablaTransiciones = tablaTransiciones;
+    }
 }

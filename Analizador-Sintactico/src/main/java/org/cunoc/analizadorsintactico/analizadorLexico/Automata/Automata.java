@@ -1,10 +1,7 @@
 package org.cunoc.analizadorsintactico.analizadorLexico.Automata;
 
-import main.java.Estado.Estado;
-import main.java.Token.Diccionario;
-import main.java.Token.Simbolo;
-import main.java.Token.TipoToken;
-import main.java.Token.Token;
+import org.cunoc.analizadorsintactico.analizadorLexico.Estado.*;
+import org.cunoc.analizadorsintactico.analizadorLexico.Token.*;
 
 import java.awt.*;
 import java.util.ArrayList;

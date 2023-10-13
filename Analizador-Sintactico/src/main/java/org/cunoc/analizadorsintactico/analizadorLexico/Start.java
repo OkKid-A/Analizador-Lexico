@@ -1,10 +1,10 @@
 package org.cunoc.analizadorsintactico.analizadorLexico;
 
-import main.java.Automata.Automata;
-import main.java.Estado.Estado;
-import main.java.Token.Simbolo;
-import main.java.Token.TipoToken;
-import main.java.UI.VentanaPrincipal;
+import org.cunoc.analizadorsintactico.analizadorLexico.Automata.Automata;
+import org.cunoc.analizadorsintactico.analizadorLexico.Estado.Estado;
+import org.cunoc.analizadorsintactico.analizadorLexico.Token.Simbolo;
+import org.cunoc.analizadorsintactico.analizadorLexico.Token.TipoToken;
+
 
 import javax.swing.*;
 
@@ -21,12 +21,6 @@ public class Start {
         start.setListaEstados();
         Automata automata = new Automata(start.transiciones, start.listaEstados);
 
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                VentanaPrincipal ventanaPrincipal = new VentanaPrincipal(automata);
-            }
-        });
     }
 
     private void setListaEstados(){

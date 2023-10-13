@@ -1,6 +1,6 @@
 package org.cunoc.analizadorsintactico.analizadorLexico.Automata;
 
-import main.java.Token.Simbolo;
+import org.cunoc.analizadorsintactico.analizadorLexico.Token.Simbolo;
 
 public class Transicion {
 
