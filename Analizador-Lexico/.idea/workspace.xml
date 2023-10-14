@@ -10,8 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37fbbb6a-3509-4cc6-926c-620f87144888" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/java/org/cunoc/analizadorsintactico/Parser/Simbolo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/java/org/cunoc/analizadorsintactico/Parser/TablaSintactica.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/java/org/cunoc/analizadorsintactico/Parser/TipoSintactico.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/java/org/cunoc/analizadorsintactico/Servlet/ParserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Analizador-Sintactico/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Analizador-Sintactico/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/java/org/cunoc/analizadorsintactico/Parser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/java/org/cunoc/analizadorsintactico/Parser/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/java/org/cunoc/analizadorsintactico/Parser/TablaTransiciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/java/org/cunoc/analizadorsintactico/Parser/TablaTransiciones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/java/org/cunoc/analizadorsintactico/analizadorLexico/Automata/Automata.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/java/org/cunoc/analizadorsintactico/analizadorLexico/Automata/Automata.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/java/org/cunoc/analizadorsintactico/analizadorLexico/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/java/org/cunoc/analizadorsintactico/analizadorLexico/Start.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/webapp/includes/resources.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/webapp/includes/resources.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,34 +53,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.STATE": "left",
-    "WebServerToolWindowFactoryState": "false",
-    "extract.method.default.visibility": "private",
-    "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "/home/okkid-a/Documents/Practicas/Analizador-Lexico",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/home/okkid-a/Documents/Practicas/Analizador-Lexico/untitled/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.STATE&quot;: &quot;left&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/okkid-a/Documents/Practicas/Analizador-Lexico&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/home/okkid-a/Documents/Practicas/Analizador-Lexico/untitled/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.java.Start" />
@@ -114,6 +123,8 @@
       <workItem from="1692653466121" duration="32611000" />
       <workItem from="1697059611542" duration="1561000" />
       <workItem from="1697151684772" duration="1463000" />
+      <workItem from="1697227664299" duration="1220000" />
+      <workItem from="1697252674981" duration="599000" />
     </task>
     <servers />
   </component>

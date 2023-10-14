@@ -11,6 +11,8 @@ public class Parser {
     private String simboloInicio;
     private Map<String, ArrayList<String>> producciones;
     private TablaTransiciones tablaTransiciones;
+
+    private TablaSintactica tablaSintactica;
     public final static String EPSILON = "";
 
     public Parser(ArrayList<String> terminales, ArrayList<String> noTerminales, Map<String, ArrayList<String>> producciones, String simboloInicio) {
