@@ -35,6 +35,7 @@ public class TablaTransiciones {
         for (String noTerminal : noTerminales) {
             primeros.put(noTerminal, new HashSet<>());
         }
+        int i = 0;
         boolean modifico = true;
         while (modifico) {
             modifico = false;
@@ -51,13 +52,14 @@ public class TablaTransiciones {
                             break;
                         } else if (simbolos.indexOf(simbolo) == simbolos.size() - 1) {
                             modifico |= primeros.get(noTerminal).addAll(simbolosPrimeros);
-                        } else {
+                        } else{
                             simbolosPrimeros.remove(EPSILON);
                             modifico |= primeros.get(noTerminal).addAll(simbolosPrimeros);
                         }
                     }
                 }
             }
+            i++;
         }
 
     }

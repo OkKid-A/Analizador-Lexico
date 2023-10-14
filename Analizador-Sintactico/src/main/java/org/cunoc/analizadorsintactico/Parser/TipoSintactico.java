@@ -7,5 +7,6 @@ public enum TipoSintactico {
     CADENA,
     BOOLEAN,
     FUNCION,
-    PARAMETRO;
+    PARAMETRO,
+    UNDEFINED;
 }

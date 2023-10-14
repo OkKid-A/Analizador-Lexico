@@ -10,16 +10,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37fbbb6a-3509-4cc6-926c-620f87144888" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/java/org/cunoc/analizadorsintactico/Parser/Simbolo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/java/org/cunoc/analizadorsintactico/Parser/TablaSintactica.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/java/org/cunoc/analizadorsintactico/Parser/TipoSintactico.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/java/org/cunoc/analizadorsintactico/Servlet/ParserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/java/org/cunoc/analizadorsintactico/Parser/Reportes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/java/org/cunoc/analizadorsintactico/Servlet/ReportesServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/webapp/reportes.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analizador-Sintactico/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Analizador-Sintactico/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/java/org/cunoc/analizadorsintactico/HelloServlet.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/java/org/cunoc/analizadorsintactico/Parser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/java/org/cunoc/analizadorsintactico/Parser/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/java/org/cunoc/analizadorsintactico/Parser/Simbolo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/java/org/cunoc/analizadorsintactico/Parser/Simbolo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/java/org/cunoc/analizadorsintactico/Parser/TablaSintactica.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/java/org/cunoc/analizadorsintactico/Parser/TablaSintactica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/java/org/cunoc/analizadorsintactico/Parser/TablaTransiciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/java/org/cunoc/analizadorsintactico/Parser/TablaTransiciones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/java/org/cunoc/analizadorsintactico/Parser/TipoSintactico.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/java/org/cunoc/analizadorsintactico/Parser/TipoSintactico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/java/org/cunoc/analizadorsintactico/Servlet/ParserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/java/org/cunoc/analizadorsintactico/Servlet/ParserServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/java/org/cunoc/analizadorsintactico/analizadorLexico/Automata/Automata.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/java/org/cunoc/analizadorsintactico/analizadorLexico/Automata/Automata.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/java/org/cunoc/analizadorsintactico/analizadorLexico/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/java/org/cunoc/analizadorsintactico/analizadorLexico/Start.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/webapp/includes/resources.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/webapp/includes/resources.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Analizador-Sintactico/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

@@ -131,15 +131,11 @@ public class Automata {
                             estadoProvicional);
                     lexemaActual = "";
                 } else {
-                    tablaDeSimbolos.addToken(new Dimension(columnaActual,filaActual),TipoToken.ERROR
-                    ,"ERROR",String.valueOf(c),estadoProvicional);
                     tablaDeSimbolos.addError(new Dimension(columnaActual,filaActual),String.valueOf(c));
                     lexemaActual = "";
                 }
             }
         } catch (IndexOutOfBoundsException e){
-            tablaDeSimbolos.addToken(new Dimension(columnaActual,filaActual),TipoToken.ERROR
-                    ,"ERROR",String.valueOf(c),estadoProvicional);
             tablaDeSimbolos.addError(new Dimension(columnaActual,filaActual),String.valueOf(c));
             lexemaActual = "";
         }

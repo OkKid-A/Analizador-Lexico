@@ -148,16 +148,12 @@ public class Start {
         noTerminales.add("E'");
         noTerminales.add("E");
         noTerminales.add("A");
-        noTerminales.add("R");
         noTerminales.add("A'");
-        noTerminales.add("Y'");
-        noTerminales.add("Y");
         noTerminales.add("O");
         noTerminales.add("T");
         noTerminales.add("T'");
         noTerminales.add("D");
         noTerminales.add("EXP");
-        noTerminales.add("EXP'");
         noTerminales.add("D'");
         noTerminales.add("C");
         noTerminales.add("I");
@@ -194,6 +190,8 @@ public class Start {
         noTerminales.add("M''");
         noTerminales.add("M");
         noTerminales.add("M'''");
+        noTerminales.add("X");
+        noTerminales.add("X'");
         return noTerminales;
     }
 
@@ -203,10 +201,8 @@ public class Start {
         producciones.put("S''",convertir(ladoDerecho));
         ladoDerecho = new String[]{"S S'",""};
         producciones.put("S'",convertir(ladoDerecho));
-        ladoDerecho = new String[]{"B","EXP'"};
+        ladoDerecho = new String[]{"B","EXP"};
         producciones.put("S",convertir(ladoDerecho));
-        ladoDerecho = new String[]{"EXP"};
-        producciones.put("EXP'",convertir(ladoDerecho));
         ladoDerecho = new String[]{"A'","break","COMENTARIO"};
         producciones.put("EXP",convertir(ladoDerecho));
         ladoDerecho = new String[]{", A' , T","= T", "O T"};
@@ -261,7 +257,7 @@ public class Start {
         producciones.put("Z",convertir(ladoDerecho));
         ladoDerecho = new String[]{". IDENTIFICADOR Z'''", "( M ) Z'''", ""};
         producciones.put("Z'''",convertir(ladoDerecho));
-        ladoDerecho = new String[]{"ENTERO","DECIMAL","True","False","( SUMA )","IDENTIFICADOR","JSON","ARRAY"};
+        ladoDerecho = new String[]{"ENTERO","DECIMAL","True","False","( SUMA )","X","JSON","ARRAY"};
         producciones.put("Z''",convertir(ladoDerecho));
         ladoDerecho = new String[]{"+=","-=","*=","/=","%=","**=","//="};
         producciones.put("O",convertir(ladoDerecho));
@@ -299,6 +295,10 @@ public class Start {
         producciones.put("M",convertir(ladoDerecho));
         ladoDerecho = new String[]{", T M'''",""};
         producciones.put("M'''",convertir(ladoDerecho));
+        ladoDerecho = new String[]{"IDENTIFICADOR X'"};
+        producciones.put("X",convertir(ladoDerecho));
+        ladoDerecho = new String[]{"( M )",""};
+        producciones.put("X'",convertir(ladoDerecho));
         return producciones;
     }
 
