@@ -1,0 +1,155 @@
+S'' = S S'$
+	
+S' = S S'
+	|e
+
+S = B
+	|E
+
+E = A'
+	|break
+	|comentario
+
+A = , A' , T
+	|= T
+	|O T
+
+A' = id  A 
+
+T = Disjunction T'
+
+T' = 'if' disjunction 'else' expression 
+	|e
+
+D = Conjun D'
+
+D' = 'or' D
+	|e
+
+Conjun = Inv Conjun'
+		
+
+Conjun' = 'and' Conjun
+		|e
+
+Inv = 'not' Inv
+	= Comparison
+
+Comparison = BO COMP
+COMP = CO
+		|e
+
+CO = == BO
+	|!= Bo
+	|<= BO
+	|< BO
+	|>= BO
+	|> BO
+
+BO = BOR BO'
+
+BO' = | BOR BO'
+	|e
+
+BOR = SUMA BOR'
+
+BOR' = & SUMA BOR'
+	|e
+
+SUMA = F SUMA'
+
+SUMA' = +F SUMA'
+	| - E SUMA'
+	|e
+
+F = |string
+	|E
+
+E = P E'
+
+E' =  * P E'
+	 % P E'
+	 E'' / P E'
+	 e
+	
+E'' = /
+	|e
+
+P = Z P'
+
+P' = ** F P'
+	|e
+
+Z = Z'' Z'''
+
+Z''' = .  Z'''
+		| (M) Z'''
+		|e
+
+Z'' = entero
+	|float
+	|True
+	|False
+	|(SUMA)
+	|X
+	|JSON
+	|ARRAY
+
+X = id X'
+
+X' = (M)
+	|e
+
+
+O = | '+=' 
+    | '-=' 
+    | '*=' 
+    | '/=' 
+    | '%=' 
+    | '**=' 
+    | '//=' 
+
+B = IF
+	|FOR
+	|WHILE
+	|DEF
+
+IF = if Disjunction : S' ELIF
+
+ELIF = elif Disjunction : S' ELIF
+	| else : S'
+	| e
+
+WHILE = while Disjunction : S' W'
+
+W' = else : S'
+	| e
+
+FOR = for id  in T : S' W'
+
+DEF = def  id ( M' ) : S'
+
+JSON = { J' }
+
+J' = J J'
+	|e
+
+J = T : T
+
+ARRAY = [ ARRAY'' ]
+
+ARRAY '' = T ARRAY'
+			|e
+
+ARRAY' = , T ARRAY'
+		|e
+
+M' =   M''
+
+M'' = ,   M''
+	|e
+
+M = T M'''
+
+M''' = , T M'''
+  	|e

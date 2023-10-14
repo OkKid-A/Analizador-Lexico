@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 7.1.--><structure>
+	<type>grammar</type>
+	<!--The list of productions.-->
+	<production>
+		<left>S''</left>
+		<right>S S' $</right>
+	</production>
+	<production>
+		<left>S'</left>
+		<right>S S'</right>
+	</production>
+	<production>
+		<left>S'</left>
+		<right/>
+	</production>
+	<production>
+		<left>S</left>
+		<right>B</right>
+	</production>
+	<production>
+		<left>S</left>
+		<right>EXP</right>
+	</production>
+	<production>
+		<left>EXP</left>
+		<right>A'</right>
+	</production>
+	<production>
+		<left>EXP</left>
+		<right>break</right>
+	</production>
+	<production>
+		<left>EXP</left>
+		<right>comentario</right>
+	</production>
+	<production>
+		<left>A</left>
+		<right>, A' , T</right>
+	</production>
+	<production>
+		<left>A</left>
+		<right>= T</right>
+	</production>
+	<production>
+		<left>A</left>
+		<right>O T</right>
+	</production>
+	<production>
+		<left>A'</left>
+		<right>id A</right>
+	</production>
+	<production>
+		<left>T</left>
+		<right>D</right>
+	</production>
+	<production>
+		<left>T'</left>
+		<right>if D else EXP</right>
+	</production>
+	<production>
+		<left>T'</left>
+		<right/>
+	</production>
+	<production>
+		<left>D</left>
+		<right>C D'</right>
+	</production>
+	<production>
+		<left>D'</left>
+		<right>or D</right>
+	</production>
+	<production>
+		<left>D'</left>
+		<right/>
+	</production>
+	<production>
+		<left>C</left>
+		<right>I C'</right>
+	</production>
+	<production>
+		<left>C'</left>
+		<right>and C</right>
+	</production>
+	<production>
+		<left>C'</left>
+		<right/>
+	</production>
+	<production>
+		<left>I</left>
+		<right>not I</right>
+	</production>
+	<production>
+		<left>I</left>
+		<right>G</right>
+	</production>
+	<production>
+		<left>G</left>
+		<right>BO G'</right>
+	</production>
+	<production>
+		<left>G'</left>
+		<right>CO</right>
+	</production>
+	<production>
+		<left>G'</left>
+		<right/>
+	</production>
+	<production>
+		<left>CO</left>
+		<right>== BO</right>
+	</production>
+	<production>
+		<left>CO</left>
+		<right>!= BO</right>
+	</production>
+	<production>
+		<left>CO</left>
+		<right>&lt;= BO</right>
+	</production>
+	<production>
+		<left>CO</left>
+		<right>&lt; BO</right>
+	</production>
+	<production>
+		<left>CO</left>
+		<right>&gt;= BO</right>
+	</production>
+	<production>
+		<left>CO</left>
+		<right>&gt; BO</right>
+	</production>
+	<production>
+		<left>BO</left>
+		<right>BOR BO'</right>
+	</production>
+	<production>
+		<left>BO'</left>
+		<right>| BOR BO'</right>
+	</production>
+	<production>
+		<left>BO'</left>
+		<right/>
+	</production>
+	<production>
+		<left>BOR</left>
+		<right>SUMA BOR'</right>
+	</production>
+	<production>
+		<left>BOR'</left>
+		<right>&amp; SUMA BOR'</right>
+	</production>
+	<production>
+		<left>BOR'</left>
+		<right/>
+	</production>
+	<production>
+		<left>SUMA'</left>
+		<right>F SUMA'</right>
+	</production>
+	<production>
+		<left>SUMA'</left>
+		<right/>
+	</production>
+	<production>
+		<left>SUMA'</left>
+		<right>- E SUMA'</right>
+	</production>
+	<production>
+		<left>F</left>
+		<right>string</right>
+	</production>
+	<production>
+		<left>F</left>
+		<right/>
+	</production>
+	<production>
+		<left>E</left>
+		<right>P E'</right>
+	</production>
+	<production>
+		<left>E'</left>
+		<right>* P E'</right>
+	</production>
+	<production>
+		<left>E'</left>
+		<right>% P E'</right>
+	</production>
+	<production>
+		<left>E'</left>
+		<right>E'' / P E'</right>
+	</production>
+	<production>
+		<left>E'</left>
+		<right/>
+	</production>
+	<production>
+		<left>E''</left>
+		<right>/</right>
+	</production>
+	<production>
+		<left>E''</left>
+		<right/>
+	</production>
+	<production>
+		<left>P</left>
+		<right>Z P'</right>
+	</production>
+	<production>
+		<left>P'</left>
+		<right>** F P'</right>
+	</production>
+	<production>
+		<left>P'</left>
+		<right/>
+	</production>
+	<production>
+		<left>Z</left>
+		<right>Z'' Z'''</right>
+	</production>
+	<production>
+		<left>Z'''</left>
+		<right>. Z'''</right>
+	</production>
+	<production>
+		<left>Z'''</left>
+		<right/>
+	</production>
+	<production>
+		<left>Z'''</left>
+		<right>( M ) Z'''</right>
+	</production>
+	<production>
+		<left>Z''</left>
+		<right>entero</right>
+	</production>
+	<production>
+		<left>Z''</left>
+		<right>decimal</right>
+	</production>
+	<production>
+		<left>Z''</left>
+		<right>True</right>
+	</production>
+	<production>
+		<left>Z''</left>
+		<right>False</right>
+	</production>
+	<production>
+		<left>Z''</left>
+		<right>( SUMA )</right>
+	</production>
+	<production>
+		<left>Z''</left>
+		<right>X</right>
+	</production>
+	<production>
+		<left>Z''</left>
+		<right>JSON</right>
+	</production>
+	<production>
+		<left>Z''</left>
+		<right>ARRAY</right>
+	</production>
+	<production>
+		<left>X</left>
+		<right>id X'</right>
+	</production>
+	<production>
+		<left>X</left>
+		<right/>
+	</production>
+	<production>
+		<left>O</left>
+		<right>+=</right>
+	</production>
+	<production>
+		<left>O</left>
+		<right>-=</right>
+	</production>
+	<production>
+		<left>O</left>
+		<right>*=</right>
+	</production>
+	<production>
+		<left>O</left>
+		<right>/=</right>
+	</production>
+	<production>
+		<left>O</left>
+		<right>%=</right>
+	</production>
+	<production>
+		<left>O</left>
+		<right>**=</right>
+	</production>
+	<production>
+		<left>O</left>
+		<right>//=</right>
+	</production>
+	<production>
+		<left>B</left>
+		<right>IF</right>
+	</production>
+	<production>
+		<left>B</left>
+		<right>FOR</right>
+	</production>
+	<production>
+		<left>B</left>
+		<right>WHILE</right>
+	</production>
+	<production>
+		<left>B</left>
+		<right>DEF</right>
+	</production>
+	<production>
+		<left>IF</left>
+		<right>if D : S' ELIF</right>
+	</production>
+	<production>
+		<left>ELIF</left>
+		<right>elif D : S' ELIF</right>
+	</production>
+	<production>
+		<left>ELIF</left>
+		<right>else : S'</right>
+	</production>
+	<production>
+		<left>ELIF</left>
+		<right/>
+	</production>
+	<production>
+		<left>WHILE</left>
+		<right>while D : S' W'</right>
+	</production>
+	<production>
+		<left>W'</left>
+		<right>else : S'</right>
+	</production>
+	<production>
+		<left>W'</left>
+		<right/>
+	</production>
+	<production>
+		<left>FOR</left>
+		<right>for id in T : S' W'</right>
+	</production>
+	<production>
+		<left>DEF</left>
+		<right>def id ( M' ) : S'</right>
+	</production>
+	<production>
+		<left>JSON</left>
+		<right>{ J' }</right>
+	</production>
+	<production>
+		<left>J'</left>
+		<right>J J'</right>
+	</production>
+	<production>
+		<left>J'</left>
+		<right/>
+	</production>
+	<production>
+		<left>J</left>
+		<right>T : T</right>
+	</production>
+	<production>
+		<left>ARRAY </left>
+		<right>[ ARRAY'' ]</right>
+	</production>
+	<production>
+		<left>ARRAY''</left>
+		<right>T ARRAY'</right>
+	</production>
+	<production>
+		<left>ARRAY''</left>
+		<right/>
+	</production>
+	<production>
+		<left>ARRAY'</left>
+		<right>, T ARRAY'</right>
+	</production>
+	<production>
+		<left>ARRAY'</left>
+		<right/>
+	</production>
+	<production>
+		<left>M'</left>
+		<right>id M''</right>
+	</production>
+	<production>
+		<left>M''</left>
+		<right>, M''</right>
+	</production>
+	<production>
+		<left>M''</left>
+		<right/>
+	</production>
+	<production>
+		<left>M</left>
+		<right>T M'''</right>
+	</production>
+	<production>
+		<left>M'''</left>
+		<right>, T M'''</right>
+	</production>
+	<production>
+		<left>M'''</left>
+		<right/>
+	</production>
+</structure>
